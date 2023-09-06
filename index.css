@@ -1,0 +1,178 @@
+.header-container{
+    background-color: #181d24;
+}
+
+.header-container > .header {
+   
+}
+
+.searchHome{
+    padding: 200px 145px 11px 169px;
+
+    .form-control{
+        border-radius: 0px !important;
+        height: calc(2.5em + 0.75rem + 2px);
+
+    }
+    
+    .btn-search{
+        background: #FFCB00 !important;
+        border-radius:0;
+        height: 100%;
+
+        img{
+            padding: 1px 16px 1px 1px;
+        }
+    }
+}
+
+
+
+
+.content-container .bottom-0{
+    bottom: -11%;
+    padding-top: 15%;
+}
+.content-container .filter{
+    filter: brightness(60%); 
+}
+.content-container > .start-animation {
+    animation-name: blinkKeyAnimation;
+    animation-duration: 4s;
+    z-index: 100;
+    position: relative;
+}
+
+.content-container > .start-animation > div {
+    animation-name: slideHorizontal;
+    animation-duration: 4s;
+}
+
+.content-container > .start-animation > div > h1 {
+    font-size: 196px;
+    color: white;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 300;
+    margin-bottom: 0rem;
+    line-height: 0.8;
+   
+}
+
+.content-container > .start-animation > span {
+    animation-name: slideVertical;
+    animation-duration: 4s;
+    font-size: 60px;
+    color: #978510;
+    font-family: Caveat,cursive;
+}
+
+.header-container > .header > .container-left,
+.header-container > .header > .container-right
+ {
+    color: white;
+}
+
+.header-container > .header > .container-left button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+}
+
+.header-container > .header > .container-left button:first-of-type {
+    color: white;
+    background-color: #978510;
+}
+
+.form{
+    background-color: #181d24;
+
+    .buttons-form{
+        padding-left: 11%;
+        button{
+            border-radius: 0px !important;
+        }
+    }
+
+}
+
+.selecter > div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
+}
+.selecter > div > span{
+    font-family: Caveat,cursive;
+    font-size: 90px;
+    color: #978510;
+    position: absolute;
+    margin-top: 5%;
+}
+
+.selecter .icon-logo{
+   /* position: absolute; */
+   margin-top: 15%;
+}
+.selecter{
+    .container-targets{
+        width: 100%;
+        margin-top: 23%;
+        .targets{
+            z-index: 1000;
+            width: 25%;
+            height: 40vh;
+            background-color: #181d24;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .square_1{
+                width: 17%;
+                height: 35%;
+            }
+            .square_2{
+                width: 17%;
+                height: 35%;
+                background-color: #666666;
+            }
+        }
+    }
+    
+}
+
+@keyframes blinkKeyAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes selectorKeyAnimationFade {
+    from {
+      filter: brightness(0%);
+    }
+    to {
+      filter: brightness(100%);
+    }
+  }
+
+@keyframes slideVertical {
+    from {
+        transform: translateY(-30px); /* Equivalente a translateX(10px) */
+    }
+    to {
+        transform: translateY(0px); /* Equivalente a translateX(10px) */
+    }
+}
+
+@keyframes slideHorizontal {
+from {
+    transform: translateX(-30px); /* Equivalente a translateX(10px) */
+}
+to {
+    transform: translateX(0px); /* Equivalente a translateX(10px) */
+}
+}
+

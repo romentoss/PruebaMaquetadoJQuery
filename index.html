@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+         @font-face { font-family: Montserrat; src: url("Assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf"); } 
+         @font-face { font-family: Caveat; src: url("Assets/fonts/Caveat/Caveat-VariableFont_wght.ttf"); } 
+    </style>
+</head>
+<body>
+    <div class="py-2 px-5 fixed-top header-container">
+        <div class="header d-flex justify-content-between">
+            <div class="d-flex flex-column container-left justify-content-around">
+                <p class="m-0">
+                    966 274 206
+                </p>
+                <div class="flex-row d-flex justify-content-start ">
+                    <button>INICIO</button>
+                    <button>Propiedades</button>
+                    <button>Vender</button>
+                </div>
+            </div>
+            <div class="container-center d-flex flex-column justify-content-center ">
+                <img src="./Assets/logo_header.svg"  alt="">
+            </div>
+            <div class="d-flex flex-column container-right justify-content-end align-items-end">
+                <div class="d-flex flex-row ">
+                    <div class="p-2">info@inmovalley.com</div>
+                    <div class="p-2">
+                        <select name="languaje" id="languaje">
+                            <option value="ENG"></option>
+                        </select>
+                    </div>
+                    <div class="p-2"><i class="fab fa-facebook-f text-white"></i></div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="p-2">Valora tu propiedad</div>
+                    <div class="p-2">Contactar</div>
+                    <div class="p-2"><img src="./Assets/icon_heart_fill.svg" alt=""></div>
+                    <div class="p-2"><img src="./Assets/menu.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container mt-5 position-relative">
+        <div class="d-flex w-100 start-animation justify-content-center align-items-end position-absolute bottom-0">
+            <div class="title1">
+                <h1>INMO</h1>
+                <h1>VALLEY</h1>
+            </div>
+            <span class="title2">Siempre a tu lado</span>
+        </div>
+        <img src="./Assets/slider.jpg" class="img-fluid filter" alt="">
+    </div>
+    <div class="form">
+        <div class="searchHome d-flex justify-content-center pb-4">
+            <div class="col col-responsive-6 p-0">
+                <select class="form-control select2 select2-hidden-accessible" name="Estado"  id="">
+                    <option value="" disabled selected hidden>Estado</option>
+                </select>
+            </div>
+            <div class="col col-responsive-6 p-0">
+                <select class="form-control select2 select2-hidden-accessible" name="Tipo"  id="">
+                    <option value="" disabled selected hidden>Tipo</option>
+                </select>
+            </div>
+            <div class="col col-responsive-6 p-0">
+                <select class="form-control select2 select2-hidden-accessible" name="Poblacion"  id="">
+                    <option value="" disabled selected hidden>Población</option>
+                </select>
+            </div>
+            <div class="col col-responsive-6 p-0">
+                <select class="form-control select2 select2-hidden-accessible" name="Zona"  id="">
+                    <option value="" disabled selected hidden>Zona</option>
+                </select>
+            </div>
+            <div class="col col-responsive-6 p-0">
+                <select class="form-control select2 select2-hidden-accessible" name="Precio_hasta"  id="">
+                    <option value="" disabled selected hidden>Precio Hasta</option>
+                </select>
+            </div>
+            <div class="col col-responsive-6 p-0">
+                <select class="form-control select2 select2-hidden-accessible" name="Referencia"  id="">
+                    <option value="" disabled selected hidden>Referencia</option>
+                </select>
+            </div>
+            <div class="col col-responsive-6 p-0">
+                <button class="btn btn-search  text-white w-100"><img class="pr-2" src="./Assets/search.svg"><span style="font-weight: 600;">Buscar</span></button>
+            </div>
+        </div>
+        <div class="buttons-form d-flex pb-5">
+            <button class="btn btn-secondary rounded-0 pe-2 p-2 px-5" style="font-weight: 600; background-color: #333333;"><img src="./Assets/rubber.svg"  class="pr-2" alt=""> Limpiar Filtros</button>
+            <button class="btn btn-secondary rounded-0 pe-2 p-2 px-5" style="font-weight: 600; background-color: #978510;"><img src="./Assets/advanced_search.svg" class="pr-2" alt="">Busqueda Avanzada</button>
+        </div>
+    </div>
+    <div class="selecter">
+        <div>
+            <span>Elige tu futuro</span>
+            <img src="./Assets/icon logo.svg" class="position-absolute icon-logo" alt="">
+        </div>
+        <div class="container-targets position-absolute d-flex justify-content-around">
+            <div class="text-white targets" style="display: flex; flex-direction: row;" id="container_1">
+                <div style="display: flex; order: 2; width: 100%; margin-left: -61%;">
+                    <h4>Pisos en Elche</h4>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; order:1; width: 100%;justify-content: space-between;">
+                    <div class="square_1" id="square1" style=" background-color: yellow;"></div>
+                    <div class="square_2"></div>
+                </div>
+                
+            </div>
+            <div class="text-white targets" style="display: flex; flex-direction: row;" id="container_2">
+                <div style="display: flex; order: 2; width: 100%; margin-left: -61%;">
+                    <h4>Chalets en Elche</h4>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; order:1; width: 100%;justify-content: space-between;">
+                    <div class="square_1" id="square2" style=" background-color: yellow;"></div>
+                    <div class="square_2"></div>
+                </div>
+                
+            </div>
+            <div class="text-white targets" style="display: flex; flex-direction: row;" id="container_3">
+                <div style="display: flex; order: 2; width: 100%; margin-left: -61%;">
+                    <h4>Apartamentos Santa Pola</h4>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; order:1; width: 100%;justify-content: space-between;">
+                    <div class="square_1" id="square3" style=" background-color: yellow;"></div>
+                    <div class="square_2"></div>
+                </div>
+                
+            </div>
+        </div> 
+        <img src="./Assets/banner-01-home.jpg" class="img-fluid" id="imagen_selecter">
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
